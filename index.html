@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> 
+    <title>Srinivas Karnati</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <!-- Header part -->
+    <!--  -->
+    <!--  -->
+    <header  class="header text-gray-600 body-font">
+      <div
+       class="container mx-auto flex flex-wrap p-5 py-5 flex-col md:flex-row items-center"
+      >
+        <a
+          href="/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <span class="title ml-3 text-xl">Srinivas Karnati</span>
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="#about" class="menu-item mr-5">About</a>
+          <a href="#experience" class="menu-item mr-5">Experience</a>
+          <a href="#education" class="menu-item mr-5">Education</a>
+          <!-- <a class="menu-item mr-5">Skills</a> -->
+        
+        </nav>
+        <button
+          class="button-menu inline-flex items-center border-0 py-2 px-4 focus:outline-none rounded text-base mt-4 md:mt-0"
+        >
+          <a style="background-color: inherit" href="#contact"> Contact</a>
+        </button>
+        <label for="toggleB" class="flex px-5 items-center cursor-pointer">
+          <!-- toggle -->
+          <div class="relative">
+            <!-- input -->
+            <input onchange="lightModeEnable()" type="checkbox" id="toggleB" class="sr-only">
+            <!-- line -->
+            <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+            <!-- dot -->
+            <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--  -->
+    <!--  -->
+    <!-- Intro /Hero part -->
+    <section class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <h1 class="name">
+            Hello<br />
+            <span class="name-label">I'm Srinivas Karnati</span>
+          </h1>
+          <p class="nrml-text mb-8 leading-relaxed">
+           Learning DevOps and Cloud Eco | Open Source enthusiast | Azure DevOps 
+          </p>
+          <div class="flex justify-center">
+            <button
+              class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
+            <a href=" https://github.com/karnatisrinivas"> GitHub </a>
+            </button>
+            <button
+              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+            ><a href="https://twitter.com/__karnati">Twitter</a>
+           
+            </button>
+          </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            class="hero-part-img object-cover object-center rounded"
+            alt="hero"
+            src="./images/Saly-13.png"
+          />
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <!--  -->
+    <!-- about me  -->
+    <section id="about" class="aboutme text-gray-600 body-font">
+      <div
+        class="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center"
+      >
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <img
+            class="about-part-img object-cover object-center rounded"
+            alt="hero"
+            src="./images/Saly-10.png"
+          />
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+        >
+          <h1 class="intro-me">
+           
+            Bit more about<br />myself..
+          </h1>
+          <p class="nrml-text mb-8 leading-relaxed">
+            A passionate Tech person, Currently learning about Cloud and DevOps. Open Source Enthusiast. I love to meet and get to know people. Automation is ❤️. 
+            <br /><br />
+            Skills: Azure Cloud, Kubernetes, Docker, Terraform, Bash Script, Linux, CI/CD , ...
+          </p>
+          <!-- <div class="flex justify-center">
+            <button
+              class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
+            <a href="./images/resume.png" download>Download CV</a>
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+   
+    <!--  -->
+    <section id="experience"class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto flex flex-col">
+        <div class="lg:w-4/6 mx-auto">
+         
+            <h1
+            style="font-size: 2em;padding:20px 0; font-weight: bold"
+            class="sm:text-3xl text-center text-2xl font-medium title-font mb-4"
+          >
+            Work Experience 
+          </h1>
+         
+          <div class="flex flex-col sm:flex-row mt-10">
+            <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+              <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg> -->
+                <img style=" border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1341131884537860097/kYjaEIQA_400x400.png"></img>
+              </div>
+              <div class="flex flex-col items-center text-center justify-center">
+                <h2 class="font-medium title-font mt-4 text-white-900 text-xl">Tata Consultancy Services</h2>
+                <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                <p class="text-base">Azure DevOps and Power Platforms Developer</p>
+                <p class="text-base">Feb 2021 - Present</p>
+              </div>
+            </div>
+            <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+              <p class="leading-relaxed text-lg mb-4">- Development of Power Platform based solutions for improving Business process.
+               </p>
+                <p class="leading-relaxed text-lg mb-4">
+                  - Azure Directory and Access management.
+                  
+                  </p>
+                 
+                  <p class="leading-relaxed text-lg mb-4">- Automated business processes using Cloud based solutions
+                    </p>
+                    <p class="leading-relaxed text-lg mb-4">- creating and managing Build and Release pipelines(CI-CD). Worked on Azure VMS, Virtual Machine, Azure Kubernetes Services(AKS).
+                    </p>
+            
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section  id="education"class="text-gray-600 body-font overflow-hidden">
+      <div class="container px-5 py-24 mx-auto">
+        <h1
+            style="font-size: 2em; padding:30px 0; font-weight: bold"
+            class="sm:text-3xl text-2xl text-center font-medium title-font mb-4"
+          >
+            Education 🎓
+          </h1>
+        <div class="-my-8 divide-y-2 divide-gray-100">
+          
+          
+          <div class="py-8 flex flex-wrap md:flex-nowrap">
+            
+            <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span class="font-semibold title-font text-white-700">Bachelor of Technology</span>
+              <span class="mt-1 text-white-500 text-sm">Jul 2017 - Sep 2020</span>
+            </div>
+            <div class="md:flex-grow">
+              <h2 class="text-2xl font-medium text-white-900 title-font mb-2">JNTUA College of Engineering, Kalikiri</h2>
+              <p class="leading-relaxed">Electronics and Communication Engineering
+
+              </p>
+              <a class="text-indigo-500 inline-flex items-center mt-4"> CGPA : 7.0
+               
+              </a>
+            </div>
+          </div>
+          <div class="py-8 flex flex-wrap md:flex-nowrap">
+            <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+              <span class="font-semibold title-font text-white-700">Diploma</span>
+              <span class="mt-1 text-white-500 text-sm">Sep 2014 - Mar 2017</span>
+            </div>
+            <div class="md:flex-grow">
+              <h2 class="text-2xl font-medium text-white-900 title-font mb-2">SV Polytechnic</h2>
+              <p class="leading-relaxed">Diploma in Electronics and Communication Engineering</p>
+              <a class="text-indigo-500 inline-flex items-center mt-4"> CGPA : 8.0
+               
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section id="contact" class="text-gray-600 body-font relative">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-12">
+          <h1
+            style="font-size: 2em; font-weight: bold"
+            class="sm:text-3xl text-2xl font-medium title-font mb-4"
+          >
+            Contact Me!
+          </h1>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <form action="https://formspree.io/f/mpzkeloq" method="post">
+                <label for="name" name="name" class="leading-7 text-sm">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full bg-gray-100 bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" name="your-email" class="leading-7 text-sm">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full bg-gray-100 bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" name="message" class="leading-7 text-sm">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="w-full bg-gray-100 bg-opacity-80 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                ></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <button
+              type="submit"
+                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              >
+                Contact me!
+              </button>
+            </form>
+            </div>
+            <div
+              class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center"
+            >
+              <a href="mailto:sr.karnati.outlook.com" class="text-white-500"
+                >sr.karnati@outlook.com</a
+              >
+              <p class="leading-normal my-5">Kadapa <br />AndhraPradesh</p>
+              <span class="inline-flex">
+                <a
+                  href="https://www.twitter.com/__karnati"
+                  class="ml-4 text-gray-500"
+                >
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/__karnati"
+                  class="ml-4 text-gray-500"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect
+                      width="20"
+                      height="20"
+                      x="2"
+                      y="2"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                    ></path>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
