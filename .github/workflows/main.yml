@@ -5,11 +5,7 @@ jobs:
   createPullRequest:
     runs-on: ubuntu-latest
     steps:
-     - name: Automate The Pull Request
-       uses: peter-evans/create-pull-request@v3
-       with:
-         token: ${{ secrets.PAT }}
-         branch: newbranch
-         base: main
-         delete-branch: true
-         body: this PR is automated
+       - name: Create Pull Request
+         uses: peter-evans/create-pull-request@v4.0.2
+         
+
